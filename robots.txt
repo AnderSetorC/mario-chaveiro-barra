@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mariochaveirobarrashopping.bob.app/sitemap.xml

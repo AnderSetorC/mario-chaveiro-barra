@@ -1,0 +1,42 @@
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Node / Vercel =====
+node_modules/
+.next/
+.vercel/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== Variáveis de ambiente =====
+.env
+.env.local
+.env.*.local
+
+# ===== Arquivos temporários =====
+*.tmp
+*.bak
+*.backup
+*~
+
+# ===== Builds / Cache =====
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ===== Uploads locais =====
+uploads/
+
+# ===== Imagens de teste (não vão pro deploy) =====
+# Mantém imagens do site, mas ignora os "ChatGPT Image" usados só pra teste
+# (opcional - se quiser subir tudo, remova as linhas abaixo)
+# ChatGPT Image*.png

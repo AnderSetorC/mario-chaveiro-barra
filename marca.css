@@ -1,0 +1,286 @@
+/* ============================================
+   PÁGINAS DE MARCA - Estilos específicos
+   ============================================ */
+
+/* ===== HERO DA MARCA ===== */
+.marca-hero {
+    background: linear-gradient(135deg, #4FC3A1 0%, #3DA88B 100%);
+    color: var(--color-white);
+    padding: calc(var(--header-height) + 60px) 0 50px;
+    text-align: center;
+}
+
+.breadcrumb {
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.breadcrumb ol {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.breadcrumb li {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.breadcrumb li + li::before {
+    content: '/';
+    margin-right: 8px;
+    opacity: 0.6;
+}
+
+.breadcrumb a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+.marca-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.marca-title .highlight {
+    color: var(--color-white);
+    font-weight: 800;
+    position: relative;
+}
+
+.marca-title .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 4px;
+    background: var(--color-white);
+    border-radius: 2px;
+}
+
+.marca-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.marca-subtitle::before,
+.marca-subtitle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 2px;
+    background: var(--color-white);
+}
+
+.marca-subtitle::before {
+    left: 0;
+}
+
+.marca-subtitle::after {
+    right: 0;
+}
+
+/* ===== CONTEÚDO DA MARCA ===== */
+.marca-content {
+    padding: 80px 0;
+    background: var(--color-white);
+}
+
+.marca-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.marca-h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.3;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+}
+
+.marca-h2 .highlight {
+    color: var(--color-primary-dark);
+}
+
+.marca-text p {
+    color: var(--color-text-light);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.marca-text strong {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.inline-link {
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-underline-offset: 3px;
+}
+
+.inline-link:hover {
+    color: var(--color-primary);
+}
+
+/* ===== CTA LATERAL ===== */
+.marca-cta {
+    background: var(--color-bg-alt);
+    padding: 40px 32px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 2px solid var(--color-primary);
+    position: sticky;
+    top: 100px;
+}
+
+.marca-cta-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+}
+
+.marca-cta-arrow {
+    color: var(--color-primary);
+    margin: 10px auto 20px;
+    animation: bounce-arrow 2s infinite;
+}
+
+@keyframes bounce-arrow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+}
+
+.btn-phone {
+    background: #0B6B3A;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.btn-phone:hover {
+    background: #085028;
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(11, 107, 58, 0.4);
+}
+
+.marca-cta .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+}
+
+.marca-img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 30px auto 0;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    display: block;
+}
+
+/* ===== OUTRAS MARCAS ===== */
+.outras-marcas {
+    padding: 80px 0;
+    background: var(--color-bg-alt);
+}
+
+.outras-marcas .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+}
+
+.outras-marcas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.brand-pill {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-text);
+    padding: 10px 20px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all var(--transition);
+}
+
+.brand-pill:hover {
+    background: var(--color-primary);
+    color: var(--color-black);
+    transform: translateY(-2px);
+    border-color: var(--color-primary-dark);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 968px) {
+    .marca-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .marca-cta {
+        position: static;
+    }
+}
+
+@media (max-width: 640px) {
+    .marca-hero {
+        padding: calc(var(--header-height) + 40px) 0 40px;
+    }
+
+    .marca-content {
+        padding: 50px 0;
+    }
+
+    .marca-cta {
+        padding: 30px 20px;
+    }
+
+    .breadcrumb ol {
+        font-size: 13px;
+    }
+}
