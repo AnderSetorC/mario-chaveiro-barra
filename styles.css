@@ -1389,6 +1389,43 @@ address {
     }
 }
 
+
+
+/* ===== FIXES MOBILE - TEXTO NÃO PODE ESTOURAR ===== */
+@media (max-width: 768px) {
+    .contact-link,
+    .contact-card address,
+    .contact-card p,
+    .nav-phone,
+    .footer-list a,
+    .footer-text,
+    .cta-strip-text {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    .contact-link {
+        font-size: 0.92rem;
+    }
+
+    .contact-card address {
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+    .contact-card {
+        word-break: break-word;
+    }
+
+    /* Garante que a sticky bar não cause overflow */
+    .sticky-cta-bar a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
 /* ===== IMPRESSÃO ===== */
 @media print {
     .header,
@@ -1410,3 +1447,4 @@ address {
         text-decoration: underline;
     }
 }
+ 
