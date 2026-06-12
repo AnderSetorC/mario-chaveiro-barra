@@ -154,6 +154,72 @@
         });
     });
 
+    // ===== CAROUSEL DE BANNERS (auto-play + dots) =====
+    const carousel = document.querySelector('.banner-carousel');
+    if (carousel) {
+        const slides = carousel.querySelectorAll('.banner-slide');
+        const dots = carousel.querySelectorAll('.banner-dot');
+        let currentSlide = 0;
+        let autoplayInterval = null;
+        const AUTOPLAY_MS = 4000; // 4 segundos por banner
+
+        function goToSlide(index) {
+            if (index < 0) index = slides.length - 1;
+            if (index >= slides.length) index = 0;
+            currentSlide = index;
+
+            slides.forEach(function(slide, i) {
+                slide.classList.toggle('active', i === currentSlide);
+            });
+            dots.forEach(function(dot, i) {
+                const isActive = i === currentSlide;
+                dot.classList.toggle('active', isActive);
+                dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+        }
+
+        function nextSlide() {
+            goToSlide(currentSlide + 1);
+        }
+
+        function startAutoplay() {
+            stopAutoplay();
+            autoplayInterval = setInterval(nextSlide, AUTOPLAY_MS);
+        }
+
+        function stopAutoplay() {
+            if (autoplayInterval) {
+                clearInterval(autoplayInterval);
+                autoplayInterval = null;
+            }
+        }
+
+        // Inicia autoplay
+        startAutoplay();
+
+        // Pausa no hover (desktop) — mobile não tem hover, mas permite toque
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+
+        // Pausa quando aba não está visível (economia de CPU/bateria)
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                stopAutoplay();
+            } else {
+                startAutoplay();
+            }
+        });
+
+        // Click nos dots
+        dots.forEach(function(dot) {
+            dot.addEventListener('click', function() {
+                const index = parseInt(this.getAttribute('data-slide-to'), 10);
+                goToSlide(index);
+                startAutoplay(); // reinicia timer
+            });
+        });
+    }
+
     // ===== PREVENÇÃO DE FLASH AO CARREGAR =====
     document.documentElement.classList.add('js-loaded');
 })();
