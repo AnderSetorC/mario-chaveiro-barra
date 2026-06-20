@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração isométrica de chave codificada com chip transponder emitindo sinal para o carro">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="lime3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9FCC2E"/>
+      <stop offset="100%" stop-color="#7FA523"/>
+    </linearGradient>
+    <linearGradient id="limeLight3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C5E05A"/>
+      <stop offset="100%" stop-color="#9FCC2E"/>
+    </linearGradient>
+    <radialGradient id="signal" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#9FCC2E" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#9FCC2E" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#9FCC2E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg3)"/>
+  <g stroke="#9FCC2E" stroke-width="1" opacity="0.06">
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="550" x2="1200" y2="550"/>
+    <line x1="600" y1="450" x2="600" y2="675"/>
+  </g>
+  <g transform="translate(300 340)">
+    <circle cx="0" cy="0" r="280" fill="url(#signal)"/>
+    <circle cx="0" cy="0" r="220" fill="none" stroke="#9FCC2E" stroke-width="1" stroke-dasharray="8 8" opacity="0.4"/>
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#9FCC2E" stroke-width="1" stroke-dasharray="6 6" opacity="0.3"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#9FCC2E" stroke-width="1" stroke-dasharray="4 4" opacity="0.2"/>
+  </g>
+  <g transform="translate(280 330) rotate(-20)">
+    <ellipse cx="0" cy="120" rx="180" ry="15" fill="#000" opacity="0.5"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="url(#lime3)" stroke-width="14"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="url(#limeLight3)" stroke-width="5" opacity="0.6"/>
+    <rect x="40" y="-20" width="100" height="40" fill="url(#lime3)" rx="6"/>
+    <path d="M 140 -16 L 240 -16 L 252 -10 L 252 -2 L 240 4 L 222 4 L 222 10 L 200 10 L 200 4 L 140 4 Z" fill="url(#limeLight3)"/>
+    <path d="M 180 4 L 180 10 M 200 4 L 200 10" stroke="#0A0A0A" stroke-width="1.5"/>
+    <rect x="55" y="-10" width="25" height="20" fill="#0A0A0A" rx="2"/>
+    <rect x="60" y="-6" width="6" height="3" fill="#9FCC2E"/>
+    <rect x="60" y="0" width="6" height="3" fill="#9FCC2E"/>
+    <rect x="70" y="-6" width="6" height="3" fill="#9FCC2E"/>
+    <rect x="70" y="0" width="6" height="3" fill="#9FCC2E"/>
+    <circle cx="-25" cy="-25" r="5" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+  <g transform="translate(900 340)">
+    <ellipse cx="0" cy="100" rx="160" ry="15" fill="#000" opacity="0.5"/>
+    <path d="M -150 0 L -120 -60 L -60 -85 L 60 -85 L 120 -60 L 150 0 L 150 20 L -150 20 Z" fill="#1A1A1A" stroke="#9FCC2E" stroke-width="1.5"/>
+    <path d="M -120 -60 L -60 -85 L 60 -85 L 120 -60 L 100 -35 L -100 -35 Z" fill="#0A0A0A"/>
+    <path d="M -60 -75 L 60 -75 L 80 -38 L -80 -38 Z" fill="#2A2A2A" opacity="0.8"/>
+    <circle cx="150" cy="-20" r="6" fill="url(#limeLight3)"/>
+    <circle cx="150" cy="-20" r="14" fill="#9FCC2E" opacity="0.3"/>
+    <circle cx="-150" cy="-20" r="6" fill="url(#limeLight3)" opacity="0.5"/>
+    <ellipse cx="-100" cy="30" rx="22" ry="14" fill="#0A0A0A" stroke="#9FCC2E" stroke-width="1.5"/>
+    <ellipse cx="100" cy="30" rx="22" ry="14" fill="#0A0A0A" stroke="#9FCC2E" stroke-width="1.5"/>
+    <text x="0" y="60" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#9FCC2E">CARRO</text>
+  </g>
+  <g transform="translate(600 230)" opacity="0.9">
+    <path d="M 0 0 Q 50 -30 100 0" stroke="#9FCC2E" stroke-width="3" fill="none"/>
+    <path d="M 0 -20 Q 50 -50 100 -20" stroke="#9FCC2E" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M 0 -40 Q 50 -70 100 -40" stroke="#9FCC2E" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <polygon points="100,0 92,-5 92,5" fill="#9FCC2E"/>
+  </g>
+  <g transform="translate(550 470)" opacity="0.9">
+    <path d="M 0 0 Q 50 30 100 0" stroke="#9FCC2E" stroke-width="3" fill="none"/>
+    <polygon points="100,0 92,-5 92,5" fill="#9FCC2E"/>
+  </g>
+  <text x="60" y="100" font-family="Poppins, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" opacity="0.95">Como funciona</text>
+  <text x="60" y="150" font-family="Poppins, sans-serif" font-size="42" font-weight="800" fill="#9FCC2E">a chave codificada?</text>
+  <text x="60" y="190" font-family="Inter, sans-serif" font-size="18" fill="#FFFFFF" opacity="0.6">O chip e o imobilizador</text>
+</svg>

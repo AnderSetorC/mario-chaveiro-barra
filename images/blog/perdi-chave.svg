@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração isométrica de chave caindo perto de carro destrancado">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="lime1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9FCC2E"/>
+      <stop offset="100%" stop-color="#7FA523"/>
+    </linearGradient>
+    <linearGradient id="limeLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C5E05A"/>
+      <stop offset="100%" stop-color="#9FCC2E"/>
+    </linearGradient>
+    <linearGradient id="carTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A2A2A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <filter id="shadow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="8" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg1)"/>
+  <g stroke="#9FCC2E" stroke-width="1" opacity="0.08">
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="550" x2="1200" y2="550"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="200" y1="450" x2="0" y2="675"/>
+    <line x1="400" y1="450" x2="200" y2="675"/>
+    <line x1="600" y1="450" x2="600" y2="675"/>
+    <line x1="800" y1="450" x2="1000" y2="675"/>
+    <line x1="1000" y1="450" x2="1200" y2="675"/>
+  </g>
+  <g transform="translate(600 480)" filter="url(#shadow1)">
+    <ellipse cx="0" cy="60" rx="280" ry="20" fill="#000" opacity="0.4"/>
+    <path d="M -240 0 L -180 -80 L -100 -110 L 100 -110 L 180 -80 L 240 0 L 240 30 L -240 30 Z" fill="url(#carTop)"/>
+    <path d="M -180 -80 L -100 -110 L 100 -110 L 180 -80 L 150 -50 L -150 -50 Z" fill="#0A0A0A" stroke="#9FCC2E" stroke-width="1" opacity="0.9"/>
+    <path d="M -100 -100 L 100 -100 L 130 -50 L -130 -50 Z" fill="#1A1A1A" stroke="#9FCC2E" stroke-width="0.5" opacity="0.6"/>
+    <line x1="-180" y1="0" x2="180" y2="0" stroke="#9FCC2E" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="240" cy="-30" r="8" fill="url(#limeLight)"/>
+    <circle cx="240" cy="-30" r="18" fill="#9FCC2E" opacity="0.3"/>
+    <ellipse cx="-150" cy="40" rx="30" ry="20" fill="#0A0A0A" stroke="#9FCC2E" stroke-width="2"/>
+    <ellipse cx="150" cy="40" rx="30" ry="20" fill="#0A0A0A" stroke="#9FCC2E" stroke-width="2"/>
+  </g>
+  <g transform="translate(900 180) rotate(25)">
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#lime1)" stroke-width="8"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#limeLight)" stroke-width="3" opacity="0.6"/>
+    <rect x="20" y="-12" width="40" height="24" fill="url(#lime1)" rx="4"/>
+    <path d="M 60 -10 L 130 -10 L 140 -6 L 140 0 L 130 4 L 120 4 L 120 8 L 100 8 L 100 4 L 60 4 Z" fill="url(#limeLight)"/>
+    <rect x="35" y="-6" width="15" height="12" fill="#0A0A0A" rx="2"/>
+    <circle cx="-12" cy="-12" r="4" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <g opacity="0.6">
+    <circle cx="850" cy="250" r="3" fill="#9FCC2E"/>
+    <circle cx="870" cy="230" r="2" fill="#9FCC2E"/>
+    <circle cx="930" cy="150" r="2" fill="#9FCC2E"/>
+  </g>
+  <text x="60" y="100" font-family="Poppins, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" opacity="0.95">Perdi a chave</text>
+  <text x="60" y="150" font-family="Poppins, sans-serif" font-size="42" font-weight="800" fill="#9FCC2E">do carro</text>
+  <text x="60" y="190" font-family="Inter, sans-serif" font-size="18" fill="#FFFFFF" opacity="0.6">E agora?</text>
+</svg>

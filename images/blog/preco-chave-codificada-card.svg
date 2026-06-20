@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração isométrica de chave codificada com etiquetas de preço">
+  <defs>
+    <linearGradient id="bg2c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="lime2c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9FCC2E"/>
+      <stop offset="100%" stop-color="#7FA523"/>
+    </linearGradient>
+    <linearGradient id="limeLight2c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C5E05A"/>
+      <stop offset="100%" stop-color="#9FCC2E"/>
+    </linearGradient>
+    <radialGradient id="glow2c" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#9FCC2E" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#9FCC2E" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow2c" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="10" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg2c)"/>
+  <circle cx="600" cy="340" r="280" fill="url(#glow2c)"/>
+  <g stroke="#9FCC2E" stroke-width="1" opacity="0.06">
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="550" x2="1200" y2="550"/>
+    <line x1="200" y1="450" x2="0" y2="675"/>
+    <line x1="600" y1="450" x2="600" y2="675"/>
+    <line x1="1000" y1="450" x2="1200" y2="675"/>
+  </g>
+  <g transform="translate(600 340) rotate(-15)" filter="url(#shadow2c)">
+    <ellipse cx="0" cy="80" rx="200" ry="20" fill="#000" opacity="0.5"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="url(#lime2c)" stroke-width="16"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="url(#limeLight2c)" stroke-width="6" opacity="0.6"/>
+    <circle cx="0" cy="0" r="40" fill="url(#limeLight2c)" opacity="0.2"/>
+    <rect x="50" y="-25" width="120" height="50" fill="url(#lime2c)" rx="8"/>
+    <path d="M 170 -22 L 290 -22 L 305 -15 L 305 -5 L 290 0 L 270 0 L 270 8 L 240 8 L 240 0 L 170 0 Z" fill="url(#limeLight2c)"/>
+    <path d="M 220 0 L 220 6 M 200 0 L 200 6 M 180 0 L 180 6" stroke="#0A0A0A" stroke-width="1.5"/>
+    <rect x="70" y="-12" width="30" height="24" fill="#0A0A0A" rx="3"/>
+    <circle cx="-30" cy="-30" r="6" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+  <g transform="translate(220 200)" filter="url(#shadow2c)">
+    <rect x="0" y="0" width="200" height="110" fill="#0A0A0A" stroke="#9FCC2E" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="200" height="34" fill="url(#lime2c)" rx="8"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Poppins, sans-serif" font-size="16" font-weight="700" fill="#0A0A0A">POPULAR</text>
+    <text x="100" y="68" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#FFFFFF" opacity="0.7">a partir de</text>
+    <text x="100" y="98" text-anchor="middle" font-family="Poppins, sans-serif" font-size="22" font-weight="800" fill="#9FCC2E">R$ 180</text>
+  </g>
+  <g transform="translate(780 480)" filter="url(#shadow2c)">
+    <rect x="0" y="0" width="200" height="110" fill="#0A0A0A" stroke="#9FCC2E" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="200" height="34" fill="url(#lime2c)" rx="8"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Poppins, sans-serif" font-size="16" font-weight="700" fill="#0A0A0A">PREMIUM</text>
+    <text x="100" y="68" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#FFFFFF" opacity="0.7">a partir de</text>
+    <text x="100" y="98" text-anchor="middle" font-family="Poppins, sans-serif" font-size="22" font-weight="800" fill="#9FCC2E">R$ 600</text>
+  </g>
+</svg>

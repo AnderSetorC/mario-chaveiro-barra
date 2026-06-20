@@ -38,5 +38,5 @@ uploads/
 
 # ===== Imagens de teste (não vão pro deploy) =====
 # Mantém imagens do site, mas ignora os "ChatGPT Image" usados só pra teste
-# (opcional - se quiser subir tudo, remova as linhas abaixo)
-# ChatGPT Image*.png
+ChatGPT Image*.png
+index.html.bak

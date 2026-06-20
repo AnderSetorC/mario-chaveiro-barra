@@ -1,0 +1,371 @@
+/* ============================================
+   MÁRIO CHAVEIRO - Estilos compartilhados
+   Para páginas internas (servicos/, blog/)
+   Importa o styles.css principal e adiciona
+   estilos específicos do conteúdo longo.
+   ============================================ */
+
+/* ===== LAYOUT DE ARTIGO (páginas internas) ===== */
+.page-content {
+    padding: calc(var(--header-height, 80px) + 40px) 0 80px;
+    background: var(--color-bg);
+}
+
+.page-content--alt {
+    background: var(--color-bg-alt);
+}
+
+.breadcrumb-bar {
+    background: var(--color-bg-alt);
+    padding: 12px 0;
+    font-size: 14px;
+    color: var(--color-text-light);
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.breadcrumb-bar a {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+.breadcrumb-bar a:hover {
+    text-decoration: none;
+}
+
+/* ===== H1 DE PÁGINAS INTERNAS ===== */
+.page-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    font-weight: 800;
+    color: var(--color-black);
+    line-height: 1.15;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.page-h1 .highlight {
+    color: var(--color-primary-dark);
+}
+
+.page-lead {
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
+    color: var(--color-text-light);
+    line-height: 1.6;
+    max-width: 780px;
+    margin: 0 auto 16px;
+}
+
+/* Bloco SEO abaixo do H1 (parágrafo otimizado com bairros/serviços) */
+.seo-block {
+    background: linear-gradient(135deg, rgba(159, 204, 46, 0.08) 0%, rgba(159, 204, 46, 0.02) 100%);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: 20px 24px;
+    margin: 24px auto 40px;
+    max-width: 780px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    text-align: left;
+}
+
+.seo-block strong {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+}
+
+/* ===== CONTEÚDO DE ARTIGO ===== */
+.article {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+.article h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.4rem, 3vw, 1.85rem);
+    font-weight: 700;
+    color: var(--color-black);
+    margin: 40px 0 16px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.article h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.15rem, 2.4vw, 1.35rem);
+    font-weight: 700;
+    color: var(--color-black);
+    margin: 32px 0 12px;
+    line-height: 1.3;
+}
+
+.article p {
+    margin-bottom: 18px;
+    color: var(--color-text);
+}
+
+.article ul,
+.article ol {
+    margin: 0 0 18px 22px;
+    padding: 0;
+}
+
+.article li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+.article a {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.article a:hover {
+    color: var(--color-primary);
+}
+
+.article strong {
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.article blockquote {
+    border-left: 4px solid var(--color-primary);
+    background: var(--color-bg-alt);
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    color: var(--color-text);
+    font-style: italic;
+}
+
+/* Tabela simples (artigos longos, comparativos) */
+.article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 0.95rem;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.article th,
+.article td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.article th {
+    background: var(--color-primary);
+    color: var(--color-black);
+    font-weight: 700;
+}
+
+.article tr:last-child td {
+    border-bottom: none;
+}
+
+/* CTA inline (dentro de artigo) */
+.inline-cta {
+    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark) 100%);
+    color: var(--color-white);
+    padding: 28px 24px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    margin: 40px 0;
+    border: 2px solid var(--color-primary);
+}
+
+.inline-cta h2,
+.inline-cta h3 {
+    color: var(--color-white);
+    margin: 0 0 8px;
+}
+
+.inline-cta p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+}
+
+.inline-cta-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== LISTA DE SERVIÇOS (página índice) ===== */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.service-tile {
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    transition: all var(--transition);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-tile:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.service-tile h3 {
+    color: var(--color-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.service-tile p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+}
+
+.service-tile .tile-cta {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+/* ===== LISTA DE POSTS DO BLOG ===== */
+.posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.post-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 2px solid transparent;
+    transition: all var(--transition);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.post-card-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: var(--color-gray-100);
+    display: block;
+}
+
+.post-card-body {
+    padding: 20px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.post-card-tag {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--color-primary);
+    color: var(--color-black);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+}
+
+.post-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-black);
+    line-height: 1.3;
+    margin: 0;
+}
+
+.post-card-excerpt {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+}
+
+.post-card-meta {
+    color: var(--color-gray-500);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* ===== META DE ARTIGO (data, autor, tempo de leitura) ===== */
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: var(--color-text-light);
+    font-size: 14px;
+    margin: 8px 0 32px;
+}
+
+.article-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ===== POSTS RELACIONADOS ===== */
+.related-posts {
+    border-top: 1px solid var(--color-gray-200);
+    margin-top: 56px;
+    padding-top: 40px;
+}
+
+.related-posts h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 640px) {
+    .seo-block {
+        padding: 16px 18px;
+        font-size: 0.95rem;
+    }
+
+    .inline-cta {
+        padding: 24px 18px;
+    }
+}
