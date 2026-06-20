@@ -65,7 +65,7 @@
         }, { passive: true });
     }
 
-    // ===== SMOOTH SCROLL PARA LINKS INTERNOS =====
+    // ===== SMOOTH SCROLL PARA LINKS INTERNOS (âncoras na mesma página) =====
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
@@ -85,6 +85,13 @@
             }
         });
     });
+
+    // ===== ROLAR PARA O TOPO AO CARREGAR PÁGINAS INTERNAS =====
+    // Quando navega para uma página interna (ex: /marcas), garante que começa do topo
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
 
     // ===== ANIMAÇÕES DE ENTRADA (INTERSECTION OBSERVER) =====
     const animatedElements = document.querySelectorAll('.section-header, .service-card, .brand-item, .contact-card, .faq-item');
